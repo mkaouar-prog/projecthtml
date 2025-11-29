@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz - Achraf MKAOUAR</title>
+   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Achraf MKAOUAR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="parcours.html">Parcours</a></li>
+                <li class="nav-item"><a class="nav-link" href="competences.html">Compétences</a></li>
+                <li class="nav-item"><a class="nav-link" href="stages.html">Stages</a></li>
+                <li class="nav-item"><a class="nav-link" href="evenements.html">Événements</a></li>
+                <li class="nav-item"><a class="nav-link" href="matieres.html">Matières</a></li>
+                <li class="nav-item"><a class="nav-link" href="passions.html">Passions</a></li>
+                <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="temoignage.html">Témoignage IIT</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <p class="text-uppercase mb-2">Quiz rapide</p>
+                <h1 class="display-4 mb-3">Web & DevOps</h1>
+                <p class="mb-0">15 questions à 1 eul choix . Cochez vos réponses puis cliquez sur "Valider" pour voir le score.</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<main class="container">
+    <section class="mb-5">
+        <div class="simple-card">
+            <form id="quizForm">
+                <div class="mb-4">
+                    <h5>1. Quel est le port par défaut de HTTP ?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" value="a" id="q1a">
+                        <label class="form-check-label" for="q1a">443</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" value="b" id="q1b">
+                        <label class="form-check-label" for="q1b">80</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" value="c" id="q1c">
+                        <label class="form-check-label" for="q1c">8080</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h5>2. Que signifie CSS ?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" value="a" id="q2a">
+                        <label class="form-check-label" for="q2a">Computer Style Sheets</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" value="b" id="q2b">
+                        <label class="form-check-label" for="q2b">Cascading Style Sheets</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" value="c" id="q2c">
+                        <label class="form-check-label" for="q2c">Creative Style Sheets</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h5>3. Docker est utilisé pour...</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" value="a" id="q3a">
+                        <label class="form-check-label" for="q3a">Créer des conteneurs reproductibles</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" value="b" id="q3b">
+                        <label class="form-check-label" for="q3b">Dessiner des interfaces</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" value="c" id="q3c">
+                        <label class="form-check-label" for="q3c">Écrire des tests unitaires</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h5>4. Dans Scrum, un sprint dure en général...</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" value="a" id="q4a">
+                        <label class="form-check-label" for="q4a">1 jour</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" value="b" id="q4b">
+                        <label class="form-check-label" for="q4b">6 mois</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" value="c" id="q4c">
+                        <label class="form-check-label" for="q4c">2 à 4 semaines</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h5>5. Kubernetes sert à...</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" value="a" id="q5a">
+                        <label class="form-check-label" for="q5a">Styliser des pages</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" value="b" id="q5b">
+                        <label class="form-check-label" for="q5b">Écrire du SQL</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" value="c" id="q5c">
+                        <label class="form-check-label" for="q5c">Orchestrer des conteneurs</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h5>6. Le « S » de HTTPS signifie...</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" value="a" id="q6a">
+                        <label class="form-check-label" for="q6a">Secure</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" value="b" id="q6b">
+                        <label class="form-check-label" for="q6b">Simple</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" value="c" id="q6c">
+                        <label class="form-check-label" for="q6c">Server</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h5>7. CI/CD veut dire...</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q7" value="a" id="q7a">
+                        <label class="form-check-label" for="q7a">Code Intelligent / Code Dynamique</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q7" value="b" id="q7b">
+                        <label class="form-check-label" for="q7b">Intégration Continue / Déploiement Continu</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q7" value="c" id="q7c">
+                        <label class="form-check-label" for="q7c">Client Internet / Cloud Desktop</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h5>8. Jenkins est...</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" value="a" id="q8a">
+                        <label class="form-check-label" for="q8a">Un langage</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" value="b" id="q8b">
+                        <label class="form-check-label" for="q8b">Un outil d'intégration continue</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" value="c" id="q8c">
+                        <label class="form-check-label" for="q8c">Un SGBD</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h5>9. Quels langages sont officiels pour Android natif ?</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q9" value="a" id="q9a">
+                        <label class="form-check-label" for="q9a">Swift et Objective-C</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q9" value="b" id="q9b">
+                        <label class="form-check-label" for="q9b">JavaScript et TypeScript</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q9" value="c" id="q9c">
+                        <label class="form-check-label" for="q9c">Java et Kotlin</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h5>10. REST est...</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q10" value="a" id="q10a">
+                        <label class="form-check-label" for="q10a">Un langage serveur</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q10" value="b" id="q10b">
+                        <label class="form-check-label" for="q10b">Un style architectural pour concevoir des API</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q10" value="c" id="q10c">
+                        <label class="form-check-label" for="q10c">Une base de données</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h5>11. Prometheus sert à...</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q11" value="a" id="q11a">
+                        <label class="form-check-label" for="q11a">Collecter des métriques et alerter</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q11" value="b" id="q11b">
+                        <label class="form-check-label" for="q11b">Héberger des images</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q11" value="c" id="q11c">
+                        <label class="form-check-label" for="q11c">Créer des maquettes</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h5>12. SQL signifie...</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q12" value="a" id="q12a">
+                        <label class="form-check-label" for="q12a">Simple Query Language</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q12" value="b" id="q12b">
+                        <label class="form-check-label" for="q12b">Structured Queue Logic</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q12" value="c" id="q12c">
+                        <label class="form-check-label" for="q12c">Structured Query Language</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h5>13. Node.js repose sur...</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q13" value="a" id="q13a">
+                        <label class="form-check-label" for="q13a">Le moteur SpiderMonkey</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q13" value="b" id="q13b">
+                        <label class="form-check-label" for="q13b">Le moteur V8 de Chrome</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q13" value="c" id="q13c">
+                        <label class="form-check-label" for="q13c">Le moteur WebKit</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h5>14. Grafana permet de...</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q14" value="a" id="q14a">
+                        <label class="form-check-label" for="q14a">Créer des tableaux de bord depuis plusieurs sources</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q14" value="b" id="q14b">
+                        <label class="form-check-label" for="q14b">Compiler du code C++</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q14" value="c" id="q14c">
+                        <label class="form-check-label" for="q14c">Héberger des emails</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h5>15. Le mouvement DevOps consiste à...</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q15" value="a" id="q15a">
+                        <label class="form-check-label" for="q15a">Remplacer les développeurs par des scripts</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q15" value="b" id="q15b">
+                        <label class="form-check-label" for="q15b">Supprimer les tests</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q15" value="c" id="q15c">
+                        <label class="form-check-label" for="q15c">Rapprocher développement et opérations</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg">Valider</button>
+                <div id="quizResult" class="mt-4"></div>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="text-center">
+    <div class="container">
+        <p class="mb-0">© 2025 Achraf MKAOUAR — Quiz</p>
+    </div>
+</footer>
+
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
